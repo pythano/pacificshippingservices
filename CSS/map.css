@@ -1,0 +1,100 @@
+.map {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map img {
+    opacity: 1;
+    background-size: cover;
+}
+
+ul.map {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+ul.map li {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul.map li:hover {
+    background: green;
+    box-shadow: 0 0 0 4px #333,
+                0 0 0 6px green;
+}
+
+ul.map li .content{
+    position: absolute;
+    bottom: 50px;
+    width: 250px;
+    height: 100px;
+    background: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+ul.map li:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.map span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    top: 150%;
+    left: 20%;
+    background-color: rgb(158, 218, 139);
+    animation: highlight 1.5s linear infinite;
+}
+
+/*@keyframes highlight {
+    100%{
+        transform: scale(5) ;
+        opacity: 0;
+    }
+}*/
+
+.map .pot2 {
+    left: 50%;
+    top: 120%;
+    
+}
+.map .pot3 {
+    left: 35%;
+    top: 170%;
+    
+}
+.map .pot4 {
+    left: 26%;
+    top: 180%;
+    
+}
+.map .pot5 {
+    left: 70%;
+    top: 160%;
+    
+}
+.map .pot6 {
+    right: 30%;
+    top: 130%;
+    
+}
