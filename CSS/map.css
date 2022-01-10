@@ -9,6 +9,7 @@
 .map img {
     opacity: 1;
     background-size: cover;
+    width: 100%;
 }
 
 ul.map {
